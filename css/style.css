@@ -130,8 +130,12 @@ html {
 #slider {
     position: relative;
     margin-top: 46.5px;
-    padding-top: 50%;
-    background: url("..img/slider/chicago.jpg") top center / cover no-repeat;
+    width: 100%;
+    height: calc(width / 2);
+}
+
+#slider .slider-img {
+    width: 100%;
 }
 
  #slider .sub-slider {
