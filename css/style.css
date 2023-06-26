@@ -133,8 +133,6 @@ html {
     margin-top: 46.5px;
     width: 100%;
     height: calc(width / 2);
-    /* background-image: url('/img/slider/chicago.jpg');
-    background: top center / cover no-repeat; */
 }
 
 #slider .slider-img {
@@ -478,7 +476,7 @@ html {
 
 .modal-container .footer-container .help-modal {
     display: inline-block;
-    float: right;
+    right: 0;
     margin: 15px 0;
 }
 
@@ -510,7 +508,7 @@ html {
 .contact .information-location .fill-in {
     display: inline-block;
     width: 50%;
-    float:right;
+    right: 0;
 }
 .contact .information-location .fill-in .fill-name-email {
     overflow: hidden;
@@ -559,9 +557,7 @@ html {
     filter: grayscale(50%);
 }
 
-#footer {
-    
-}
+
 
 #footer .text-footer {
     color: #000;
