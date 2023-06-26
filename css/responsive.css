@@ -1,0 +1,61 @@
+/* pc min-width >= 1024px */
+@media (min-width: 64em) {
+    #header #mobile-menu {
+        display: none;
+    }
+}
+
+/* tablet  min-width >= 740px , max-width < 1024px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    #header #mobile-menu {
+        display: none;
+    }
+}
+
+/* mobile max-width < 740px */
+@media (max-width: 46.25em) {
+
+    html { 
+        /* Hành vi khi cuộn */
+        scroll-behavior: auto;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    #nav li a {
+        display: block;
+    }
+
+    #nav >li:first-child {
+        display: inline-block;
+    }
+
+    #header .search {
+        display: none;
+    }
+
+    #mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 46.5px;
+    line-height: 1.7;
+    padding: 12px 24px;
+    font-size: 15px;
+    display: block;
+    float: right;
+    text-decoration: none;
+    color: #fff;
+        }
+    #mobile-menu:hover {
+    background-color: #ccc;
+    color: #000;
+    }
+
+}

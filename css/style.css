@@ -48,7 +48,8 @@ html {
     right: 0;
     height: 46.5px;
     background-color: black;
-    z-index: 1;
+    z-index: 2;
+    overflow: hidden;
 }
 
 #nav {
@@ -56,7 +57,7 @@ html {
 }
 
 #nav li{
-    display: inline-block;
+    display: block;
     position: relative;
 }
 
@@ -120,7 +121,7 @@ html {
     color: #fff;
 }
 
-#header .search:hover{
+#header .search:hover {
     background-color: #f44336;
     color: #fff;
 }
@@ -130,8 +131,14 @@ html {
 #slider {
     position: relative;
     margin-top: 46.5px;
-    padding-top: 50%;
-    background: url('/img/slider/chicago.jpg') top center / cover no-repeat;
+    width: 100%;
+    height: calc(width / 2);
+    /* background-image: url('/img/slider/chicago.jpg');
+    background: top center / cover no-repeat; */
+}
+
+#slider .slider-img {
+    width: 100%;
 }
 
  #slider .sub-slider {
@@ -166,9 +173,12 @@ html {
 
 #content .section {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 0;
     overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .section .heading-section {

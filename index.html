@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE BAND</title>
     <link rel="shortcut icon" href="https://icdn.dantri.com.vn/2018/4/26/29-15247458904172115659619.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/fonts- icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="fonts- icon/themify-icons/themify-icons.css">
 </head>
 <body>
     <div id="main">
         <!-- Begin header -->
         <div id="header">
             <ul id="nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" >Home</a></li>
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="" title ="More">More<span class="ti-angle-down icon-down"></span></a>
+                    <a href="#" title ="More">More<span class="ti-angle-down icon-down"></span></a>
                     <ul class="subnav">
                         <li><a href="#">Merchandise</a></li>
                         <li><a href="#">Extras</a></li>
@@ -27,12 +28,14 @@
                     </ul>
                 </li>
             </ul>
-            <a href="" class="search"><i class="ti-search"></i></a>
+            <a href="#" class="search"><i class="ti-search"></i></a>
+            <a href="#" id="mobile-menu"><i class="ti-menu"></i></a>
         </div>
         <!-- End Header -->
 
         <!-- Begin Slider -->
         <div id="slider">
+            <img class="slider-img" src="img/slider/chicago.jpg" alt="Chicago">
             <div class="sub-slider">
                 <h2 class="header-sub">Chicago</h2>
                 <p class="text-sub">Thank you, Chicago - A night we won't forget.</p>
@@ -55,15 +58,15 @@
                     <div class="member-list">
                         <div class="member">
                             <p class="name-member">Name</p>
-                            <img src="/img/about/bandmember.jpg" alt="Name" class="member-img">
+                            <img src="img/about/bandmember.jpg" alt="Name" class="member-img">
                         </div>
                         <div class="member">
                             <p class="name-member">Name</p>
-                            <img src="/img/about/bandmember.jpg" alt="Name" class="member-img">
+                            <img src="img/about/bandmember.jpg" alt="Name" class="member-img">
                         </div>
                         <div class="member">
                             <p class="name-member">Name</p>
-                            <img src="/img/about/bandmember.jpg" alt="Name" class="member-img">
+                            <img src="img/about/bandmember.jpg" alt="Name" class="member-img">
                         </div>
                     </div>
                 </div>
@@ -86,7 +89,7 @@
                     <div class="buy-tickets-location">
 
                         <div class="ticket-location">
-                            <img class="img-location" src="/img/tour/newyork.jpg" alt="New York">
+                            <img class="img-location" src="img/tour/newyork.jpg" alt="New York">
 
                             <div class="event-information">
                                 <p class="location"><b>New York</b></p>
@@ -97,7 +100,7 @@
                         </div>
 
                         <div class="ticket-location">
-                            <img class="img-location" src="/img/tour/paris.jpg" alt="Paris">
+                            <img class="img-location" src="img/tour/paris.jpg" alt="Paris">
                             
                             <div class="event-information">
                                 <p class="location"><b>Paris</b></p>
@@ -108,7 +111,7 @@
                         </div>
 
                         <div class="ticket-location">
-                            <img class="img-location" src="/img/tour/sanfrancisco.jpg" alt="San Francisco">
+                            <img class="img-location" src="img/tour/sanfrancisco.jpg" alt="San Francisco">
                             
                             <div class="event-information">
                                 <p class="location"><b>San Francisco</b></p>
@@ -150,7 +153,7 @@
             </div>
 
             <div class="img-footer">
-                <img src="/img/footer/map.jpg" alt="map">
+                <img src="img/footer/map.jpg" alt="map">
             </div>
             <!-- END Contact -->
         </div>
@@ -240,6 +243,36 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+    </script>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        var headerHeight = header.clientHeight;
+        
+
+
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+
+            if (isClosed) {
+                header.style.height = 'auto'; 
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        // tự động đóng khi chọn menu
+
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 </html>
