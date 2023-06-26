@@ -1,13 +1,13 @@
 /* pc min-width >= 1024px */
 @media (min-width: 64em) {
-    #header #mobile-menu {
+    #mobile-menu {
         display: none;
     }
 }
 
 /* tablet  min-width >= 740px , max-width < 1024px*/
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
-    #header #mobile-menu {
+    #mobile-menu {
         display: none;
     }
 }
