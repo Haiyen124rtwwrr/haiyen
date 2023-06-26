@@ -57,7 +57,7 @@ html {
 }
 
 #nav li{
-    display: block;
+    display: inline-block;
     position: relative;
 }
 
