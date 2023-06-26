@@ -15,11 +15,6 @@
 /* mobile max-width < 740px */
 @media (max-width: 46.25em) {
 
-    html { 
-        /* Hành vi khi cuộn */
-        scroll-behavior: auto;
-    }
-
     #nav {
         display: block;
     }
