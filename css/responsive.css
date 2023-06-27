@@ -1,27 +1,51 @@
 /* pc min-width >= 1024px */
 @media (min-width: 64em) {
-    #header #mobile-menu {
+    #mobile-menu {
         display: none;
     }
 }
 
 /* tablet  min-width >= 740px , max-width < 1024px*/
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
-    #header #mobile-menu {
+    #mobile-menu {
         display: none;
     }
 }
 
 /* mobile max-width < 740px */
 @media (max-width: 46.25em) {
+    #header{
+        overflow: hidden;
+    }
 
-    html { 
-        /* Hành vi khi cuộn */
-        scroll-behavior: auto;
+    #header .search {
+        display: none;
     }
 
     #nav {
         display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #cccccc4e;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 4px 30px;
+    }
+
+    #nav .subnav li {
+        padding: 2px 30px;
+    }
+
+    #nav .subnav li:hover {
+        background-color: #000;
+    }
+
+    #nav .subnav li:hover a{
+        color: #fff;
     }
 
     #nav li {
@@ -36,10 +60,6 @@
         display: inline-block;
     }
 
-    #header .search {
-        display: none;
-    }
-
     #mobile-menu{
     position: absolute;
     top: 0;
@@ -52,10 +72,58 @@
     float: right;
     text-decoration: none;
     color: #fff;
-        }
+    }
+
     #mobile-menu:hover {
     background-color: #ccc;
     color: #000;
     }
 
+    #slider .sub-slider {
+        display: none;
+    }
+
+    #content .section {
+        padding: 64px 0;
+    }
+
+    #content .about .member {
+        width: 100%;
+    }
+
+    #content .about .member img {
+        width: 60%;
+    }
+
+    #content .buy-tickets-location .ticket-location {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    #contact .information-location .information {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    #contact .information-location .fill-in {
+        width: 100%;
+    }
+
+    #contact .information-location .fill-email{
+        width: 100%;
+    }
+
+    #contact .information-location p {
+        font-size: 17px;
+    }
+
+    .modal-container {
+        bottom: 75px;
+        margin: 0 10px;
+    }
+
+    .modal-container .footer-container .help-modal{
+        position: absolute;
+        right: 16px;
+    }
 }

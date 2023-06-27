@@ -7,6 +7,7 @@
     <title>THE BAND</title>
     <link rel="shortcut icon" href="https://icdn.dantri.com.vn/2018/4/26/29-15247458904172115659619.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="fonts- icon/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
                 </li>
             </ul>
             <a href="#" class="search"><i class="ti-search"></i></a>
-            <a href="#" id="mobile-menu"><i class="ti-menu"></i></a>
+            <div id="mobile-menu"><i class="ti-menu"></i></div>
         </div>
         <!-- End Header -->
 
@@ -141,8 +142,8 @@
                         </div>
                         <div class="fill-in">
                             <div class="fill-name-email">
-                                <div class="col-haf col"><input type="text" class="name-email" placeholder="Name"></div>
-                                <div class="col-haf col"><input type="text" class="name-email" placeholder="Email"></div>
+                                <div class="col-haf col fill-email"><input type="text" class="name-email" placeholder="Name"></div>
+                                <div class="col-haf col fill-email"><input type="text" class="name-email" placeholder="Email"></div>
                             </div>
                             <input class="fill-message" type="text" placeholder="Message">
                             <button class="send">SEND</button>
@@ -268,8 +269,13 @@
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
 
-            menuItem.onclick = function() {
-                header.style.height = null;
+            menuItem.onclick = function(event) {
+                var isPrentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isPrentMenu) {
+                    event.preventDefault();
+                }else{
+                    header.style.height = null;
+                }
             }
         }
     </script>
