@@ -512,7 +512,7 @@ html {
 .contact .information-location .fill-in {
     display: inline-block;
     width: 50%;
-    right: 0;
+    float: right;
 }
 .contact .information-location .fill-in .fill-name-email {
     overflow: hidden;
