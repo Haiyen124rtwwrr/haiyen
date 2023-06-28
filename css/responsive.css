@@ -23,8 +23,6 @@
         display: none;
     }
 
-=======
->>>>>>> 3eb09e093626223553b6dfaada54c2bf3a4c6b02
     #nav {
         display: block;
     }
@@ -81,8 +79,7 @@
     background-color: #ccc;
     color: #000;
     }
-
-<<<<<<< HEAD
+    
     #slider .sub-slider {
         display: none;
     }
@@ -131,6 +128,3 @@
         right: 16px;
     }
 }
-=======
-}
->>>>>>> 3eb09e093626223553b6dfaada54c2bf3a4c6b02
