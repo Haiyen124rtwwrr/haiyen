@@ -49,10 +49,7 @@ html {
     height: 46.5px;
     background-color: black;
     z-index: 1;
-<<<<<<< HEAD
-=======
     overflow: hidden;
->>>>>>> 3eb09e093626223553b6dfaada54c2bf3a4c6b02
 }
 
 #nav {
@@ -325,6 +322,10 @@ html {
 #content .event-information .buy-tickets:hover{
     color: #000;
     background-color: #ccc;
+}
+
+#contact .information-location .fill-in{
+    float: right;
 }
 /* END Tour */
 #footer {
