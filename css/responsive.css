@@ -84,6 +84,10 @@
         display: none;
     }
 
+    #band .text-about {
+        margin: 0 16px;
+    }
+
     #content .section {
         padding: 64px 0;
     }
