@@ -327,6 +327,7 @@ html {
 #contact .information-location .fill-in{
     float: right;
 }
+
 /* END Tour */
 #footer {
     text-align: center;
@@ -481,7 +482,7 @@ html {
 
 .modal-container .footer-container .help-modal {
     display: inline-block;
-    right: 0;
+    float: right;
     margin: 15px 0;
 }
 
