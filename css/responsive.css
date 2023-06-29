@@ -33,6 +33,7 @@
     #header .search {
         display: none;
     }
+/* header */
     #nav {
         display: block;
     }
@@ -89,9 +90,13 @@
     background-color: #ccc;
     color: #000;
     }
-
+/* slider */
     #slider .sub-slider {
         display: none;
+    }
+
+    #content .band .text-about {
+        margin: 0 16px;
     }
 
     #content .section {
@@ -137,4 +142,5 @@
         position: absolute;
         right: 16px;
     }
+    /* modal */
 }
